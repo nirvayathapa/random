@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+:root{
+  --font-family: 'Barlow Semi Condensed', sans-serif;
+  --position:absolute;
+}
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: hsl(210, 46%, 95%);
+}
+
+/* styling container  */
+.wrapper {
+  width: 1250px;
+  height: 650px;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px 20px;
+}
+
+
+/* positioning  and styling cell inside  the grid */
+
+#item1 {
+  grid-column: 1/span 2;
+  background-color: hsl(263, 55%, 52%);
+  background-image: url('../images/bg-pattern-quotation.svg');
+  background-repeat: no-repeat;
+  background-position: 80% 0%;
+  border-radius: 10px;
+  position: relative;
+  color: white;
+}
+#item1:hover{
+  transition: transform 1s;
+  cursor: pointer;
+  transform: scale(1.05,1.05);
+  z-index: 1;
+  background-color: brown;
+}
+#item2{
+  background-color: hsl(217, 19%, 35%);
+  color: white;
+  border-radius: 10px;
+  position: relative;
+}
+#item2:hover{
+    transition: transform 1s;
+    cursor: pointer;
+    transform: scale(1.05,1.05);
+    z-index: 1;
+    background-color: rgb(42, 89, 165);
+}
+
+#item3{
+  border-radius: 10px;
+  grid-row-end: span 2;
+  background-color: white;
+  position: relative;
+  color:black;
+  
+}
+#item3:hover{
+    transition: transform 1s;
+    cursor: pointer;
+    transform: scale(1.05,1.05);
+    z-index: 1;
+    background-color: rgb(224, 65, 161);
+    /* color: aquamarine; */
+}
+#item4{
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+  color: black;
+}
+#item4:hover{
+  transition: transform 1s;
+  cursor: pointer;
+  transform: scale(1.05,1.05);
+  z-index: 1;
+  background-color:#9A86A4;
+  /* color: white; */
+}
+#item:hover h1.fourthhead{
+  color: white;
+
+}
+#item5 {
+  border-radius: 10px;
+  grid-column: 2/span 2;
+  background-color: hsl(219, 29%, 14%);
+  position: relative;
+  color: white;
+}
+#item5:hover{
+  transition: transform 1s;
+  cursor: pointer;
+  transform: scale(1.05,1.05);
+  z-index: 1;
+  background-color: rgb(15, 119, 15);
+  /* color: aquamarine; */
+}
+
+/* styling element inside the cell (content) */
+
+.pfp{
+  border-radius: 50%;
+  margin: 30px;
+  height: 40px;
+  
+}
+.pfp[alt="first"]{
+  border: 2px solid hsl(263, 41%, 65%);
+  ;
+}
+.pfp[alt="last"]{
+  border: 2px solid  rgba(117, 65, 200, 1); 
+}
+
+
+
+.name{
+  font-family: var(--font-family);
+  position: var(--position);
+  top:30px;
+  font-size: 18px;
+
+}
+.buyer{
+  font-family: var(--font-family);
+  position: var(--position);
+  top: 50px;
+  font-size: 16px;
+  color:hsl(0, 0%, 70%)
+}
+
+
+/* Heading */
+
+.firsthead{
+  position: var(--position);
+  width: 520px;
+  font-family: var(--font-family);
+  font-weight: bold;
+  padding:37px;
+  top: 50px;
+  left: 0px;
+}
+.secondhead{
+  position: var(--position);
+  font-family: var(--font-family);
+  font-weight: bold;
+  width: 300px;
+  top: 85px;
+  left: 15px;
+  padding-left: 15px;
+}
+.thirdhead{
+  position:absolute;
+  font-family: var(--font-family);
+  width: 200px;
+  left: 30px;
+  color: hsl(217, 19%, 35%);
+  font-weight: bold;
+}
+.fourthhead{
+  position: absolute;
+  font-family: var(--font-family);
+  color: hsl(217, 19%, 35%);
+  font-weight: bold;
+  left: 30px;
+  width: 200px;
+}
+.fifthhead{
+  position: absolute;
+  left: 30px;
+  font-family: var(--font-family);
+  font-weight: bold;
+  width: 500px;
+
+}
+
+
+
+
+
+
+/* Content (main paragraph */
+p.content1{
+  position: var(--position);
+  top: 170px;
+  left: 30px;
+  width: 500px;
+  font-family: var(--font-family);
+  font-size: 16px;
+  color: hsl(0, 0%, 70%);
+}
+p.content2{
+  position: var(--position);
+  top: 170px;
+  left: 30px;
+  font-family: var(--font-family);
+  font-size: 16px;
+  color: hsl(0, 0%, 70%);
+  width: 250px;
+  
+}
+p.content3{
+  position: var(--position);
+  left: 30px;
+  top: 200px;
+  font-family: var(--font-family);
+  font-size: 16px;
+  color: hsl(0, 0%, 70%);
+  width: 250px;
+
+
+
+
+}
+p.content4{
+  position: var(--position);
+  left: 30px;
+  top: 180px;
+  font-family: var(--font-family);
+  font-size: 16px;
+  color: hsl(0, 0%, 70%);
+  width: 70%;
+}
+p.content5{
+  position: var(--position);
+  left: 30px;
+  top: 185px;
+  font-family: var(--font-family);
+  font-size: 16px;
+  color: hsl(0, 0%, 70%);
+  width: 90%;
+}
+@media screen  and (max-width:700px){
+  body{
+    display: grid;
+    place-items: center;
+  }
+  
+}
