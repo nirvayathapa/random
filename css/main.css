@@ -107,7 +107,6 @@ body {
   transform: scale(1.05,1.05);
   z-index: 1;
   background-color: rgb(15, 119, 15);
-  /* color: aquamarine; */
 }
 
 /* styling element inside the cell (content) */
@@ -249,6 +248,8 @@ p.content5{
   body{
     display: grid;
     place-items: center;
+    grid-template-rows: auto auto auto auto auto;
   }
+
   
 }
